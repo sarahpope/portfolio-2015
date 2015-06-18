@@ -1,0 +1,41 @@
+// Grid Variables
+
+$grid-max-width: 65em;
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper:after,
+.row:after {
+    @extend %clearfix;
+}
+
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px; 
+}
+
+@media only screen and (min-width: 30em) {
+ 
+    .wrapper {
+        width: 90%;
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+        }
+         
+    @for $i from 1 through 12 {
+        .column-#{$i} { 
+            width: 100% / 12 * $i;
+        }
+    }
+     
+}
+
+.flush {
+    padding: 0;
+}

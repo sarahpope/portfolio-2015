@@ -1,0 +1,14 @@
+# Site settings
+title: Sarah Pope
+email: sarah@sarahpope.co
+description: > # this means to ignore newlines until "baseurl:"
+  Sarah Pope is a product designer who makes human-focused software that users love.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sarahpope.co" # the base hostname & protocol for your site
+twitter_username: thesarahpope
+github_username:  sarahpope
+instagram_username: sarahmpope
+dribbble_username: sarahpope
+
+# Build settings
+markdown: kramdown
